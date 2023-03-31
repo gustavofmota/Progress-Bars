@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Teste</title>
+	<style>
+		h1,h2,h3,h4,p,a{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		body, html{
+			background-color:rgb(61, 60, 60);
+			box-sizing: border-box;
+			font-family: 'Chivo', Helvetica, sans-serif;
+		}
+
+		.container{
+			width: 320px;
+			height: fit-content;
+			border: 1px solid black;
+			background: rgb(43, 58, 107);
+			color: white;
+			padding: 16px;
+
+		}
+
+		.techGroup{
+			height: 100%;
+		}
+
+		.tech{
+			margin-bottom: 10px;
+		}
+
+		h3{
+			margin-bottom:16px;
+		}
+
+		.perc{
+			width: 160px;
+			height: 10px;
+			background:grey;
+			border-radius: 10px;
+		}
+
+		.value{
+			opacity: 0;
+			height: 100%;
+			border-radius: 10px;
+			animation: progress 1.5s ease-in forwards;
+		}
+
+		#JavaScript .value{
+			width: 60%;
+			background:rgb(236, 214, 15);
+		}
+
+		#HTML .value{
+			width: 90%;
+			background:rgb(226, 156, 4);
+		}
+
+		#CSS .value{
+			width: 80%;
+			background:rgb(6, 132, 235);
+		}
+
+		@keyframes progress{
+
+			0%{
+				width: 0%;
+				opacity: 1;
+			}
+
+			100%{
+				opacity: 1;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Skills</h3>
+		<div class="techGroup">
+			<div id="JavaScript" class="tech">
+				<p>JavaScript</p>
+				<div class="perc"><div class="value"></div></div>
+			</div>
+			<div id="HTML" class="tech">
+				<p>Html</p>
+				<div class="perc"><div class="value"></div></div>
+			</div>
+			<div id="CSS" class="tech">
+				<p>CSS</p>
+				<div class="perc"><div class="value"></div></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
